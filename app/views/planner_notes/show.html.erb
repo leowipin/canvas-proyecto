@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @planner_note %>
+
+<div>
+  <%= link_to "Edit this planner note", edit_planner_note_path(@planner_note) %> |
+  <%= link_to "Back to planner notes", planner_notes_path %>
+
+  <%= button_to "Destroy this planner note", @planner_note, method: :delete %>
+</div>

@@ -1,0 +1,47 @@
+<%= form_with(model: planner_note) do |form| %>
+  <% if planner_note.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(planner_note.errors.count, "error") %> prohibited this planner_note from being saved:</h2>
+
+      <ul>
+        <% planner_note.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :todo_date, style: "display: block" %>
+    <%= form.datetime_field :todo_date %>
+  </div>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :details, style: "display: block" %>
+    <%= form.text_area :details %>
+  </div>
+
+  <div>
+    <%= form.label :student_id, style: "display: block" %>
+    <%= form.text_field :student_id %>
+  </div>
+
+  <div>
+    <%= form.label :course_id, style: "display: block" %>
+    <%= form.text_field :course_id %>
+  </div>
+
+  <div>
+    <%= form.label :workflow_state, style: "display: block" %>
+    <%= form.text_field :workflow_state %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  todo_date: 2023-07-20 10:26:39
+  title: MyString
+  details: MyText
+  student: one
+  course: one
+  workflow_state: MyString
+
+two:
+  todo_date: 2023-07-20 10:26:39
+  title: MyString
+  details: MyText
+  student: two
+  course: two
+  workflow_state: MyString
